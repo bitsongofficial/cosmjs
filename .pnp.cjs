@@ -19,7 +19,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "cosmjs-monorepo-root",
+        "name": "cosmjs-rn-monorepo-root",
         "reference": "workspace:."
       },
       {
@@ -111,7 +111,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@cosmjs-rn/stream", ["workspace:packages/stream"]],
       ["@cosmjs-rn/tendermint-rpc", ["workspace:packages/tendermint-rpc"]],
       ["@cosmjs-rn/utils", ["workspace:packages/utils"]],
-      ["cosmjs-monorepo-root", ["workspace:."]]
+      ["cosmjs-rn-monorepo-root", ["workspace:."]]
     ],
     "fallbackPool": [
       [
@@ -7132,11 +7132,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["cosmjs-monorepo-root", [
+      ["cosmjs-rn-monorepo-root", [
         ["workspace:.", {
           "packageLocation": "./",
           "packageDependencies": [
-            ["cosmjs-monorepo-root", "workspace:."],
+            ["cosmjs-rn-monorepo-root", "workspace:."],
             ["@cosmjs-rn/amino", "workspace:packages/amino"],
             ["@cosmjs-rn/cosmwasm-stargate", "workspace:packages/cosmwasm-stargate"],
             ["@cosmjs-rn/crypto", "workspace:packages/crypto"],
