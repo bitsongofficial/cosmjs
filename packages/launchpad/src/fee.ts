@@ -1,5 +1,5 @@
-import { coins, StdFee } from "@cosmjs/amino";
-import { Decimal, Uint53 } from "@cosmjs/math";
+import { coins, StdFee } from "@cosmjs-rn/amino";
+import { Decimal, Uint53 } from "@cosmjs-rn/math";
 
 export type FeeTable = Record<string, StdFee>;
 
@@ -35,7 +35,7 @@ export class GasPrice {
    * Parses a gas price formatted as `<amount><denom>`, e.g. `GasPrice.fromString("0.012utoken")`.
    *
    * The denom must match the Cosmos SDK 0.39 pattern (https://github.com/cosmos/cosmos-sdk/blob/v0.39.3/types/coin.go#L597-L598).
-   * See `GasPrice` in @cosmjs/stargate for a more generic matcher.
+   * See `GasPrice` in @cosmjs-rn/stargate for a more generic matcher.
    */
   public static fromString(gasPrice: string): GasPrice {
     // Use Decimal.fromUserInput and checkDenom for detailed checks and helpful error messages

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { Coin } from "@cosmjs/amino";
+import { Coin } from "@cosmjs-rn/amino";
 
 import { BlockHeader, SearchTxsResponse } from "./base";
 import { LcdClient } from "./lcdclient";

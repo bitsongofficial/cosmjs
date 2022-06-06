@@ -89,11 +89,11 @@ export class Registry {
    * 2. Passing custom types to the constructor.
    * This only creates confusion for users. The reason here is historical.
    * Using `register()` is recommended and 2. is deprecated because its behaviour
-   * will change in https://github.com/cosmos/cosmjs/issues/994.
+   * will change in https://github.com/bitsongofficial/cosmjs-rn/issues/994.
    *
    * There is currently no way to unregister/override the default types. We should
    * change the `customTypes` argument to override the default types if set.
-   * See https://github.com/cosmos/cosmjs/issues/994
+   * See https://github.com/bitsongofficial/cosmjs-rn/issues/994
    */
   public constructor(customTypes: Iterable<[string, GeneratedType]> = []) {
     const { cosmosCoin, cosmosMsgSend } = defaultTypeUrls;
@@ -115,7 +115,7 @@ export class Registry {
    * If you need to work with the result type in TypeScript, you can use:
    *
    * ```
-   * import { assert } from "@cosmjs/utils";
+   * import { assert } from "@cosmjs-rn/utils";
    *
    * const Coin = registry.lookupType("/cosmos.base.v1beta1.Coin");
    * assert(Coin); // Ensures not unset

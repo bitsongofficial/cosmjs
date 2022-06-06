@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
-import { Tendermint34Client, toRfc3339WithNanoseconds } from "@cosmjs/tendermint-rpc";
-import { sleep } from "@cosmjs/utils";
+import { toHex } from "@cosmjs-rn/encoding";
+import { Uint53 } from "@cosmjs-rn/math";
+import { Tendermint34Client, toRfc3339WithNanoseconds } from "@cosmjs-rn/tendermint-rpc";
+import { sleep } from "@cosmjs-rn/utils";
 import { MsgData } from "cosmjs-types/cosmos/base/abci/v1beta1/abci";
 import { Coin } from "cosmjs-types/cosmos/base/v1beta1/coin";
 
@@ -36,7 +36,7 @@ export class TimeoutError extends Error {
 }
 
 /**
- * This is the same as BlockHeader from @cosmjs/launchpad but those might diverge in the future.
+ * This is the same as BlockHeader from @cosmjs-rn/launchpad but those might diverge in the future.
  */
 export interface BlockHeader {
   readonly version: {
@@ -50,7 +50,7 @@ export interface BlockHeader {
 }
 
 /**
- * This is the same as Block from @cosmjs/launchpad but those might diverge in the future.
+ * This is the same as Block from @cosmjs-rn/launchpad but those might diverge in the future.
  */
 export interface Block {
   /** The ID is a hash of the block header (uppercase hex) */
@@ -74,13 +74,13 @@ export interface IndexedTx {
    * If you hash this, you get the transaction hash (= transaction ID):
    *
    * ```js
-   * import { sha256 } from "@cosmjs/crypto";
-   * import { toHex } from "@cosmjs/encoding";
+   * import { sha256 } from "@cosmjs-rn/crypto";
+   * import { toHex } from "@cosmjs-rn/encoding";
    *
    * const transactionId = toHex(sha256(indexTx.tx)).toUpperCase();
    * ```
    *
-   * Use `decodeTxRaw` from @cosmjs/proto-signing to decode this.
+   * Use `decodeTxRaw` from @cosmjs-rn/proto-signing to decode this.
    */
   readonly tx: Uint8Array;
   readonly gasUsed: number;

@@ -1,4 +1,4 @@
-import { Bip39, Random } from "@cosmjs/crypto";
+import { Bip39, Random } from "@cosmjs-rn/crypto";
 
 import * as constants from "../constants";
 import { makePathBuilder } from "../pathbuilder";

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { fromBase64, fromHex } from "@cosmjs/encoding";
-import { JsonRpcSuccessResponse } from "@cosmjs/json-rpc";
-import { assert } from "@cosmjs/utils";
+import { fromBase64, fromHex } from "@cosmjs-rn/encoding";
+import { JsonRpcSuccessResponse } from "@cosmjs-rn/json-rpc";
+import { assert } from "@cosmjs-rn/utils";
 
 import { DateWithNanoseconds, fromRfc3339WithNanoseconds } from "../../dates";
 import { SubscriptionEvent } from "../../rpcclients";
@@ -428,14 +428,14 @@ type RpcSignature = {
   readonly timestamp: string;
   /**
    * Base64 encoded signature.
-   * There are cases when this is not set, see https://github.com/cosmos/cosmjs/issues/704#issuecomment-797122415.
+   * There are cases when this is not set, see https://github.com/bitsongofficial/cosmjs-rn/issues/704#issuecomment-797122415.
    */
   readonly signature: string | null;
 };
 
 /**
  * In some cases a timestamp is optional and set to the value 0 in Go.
- * This can lead to strings like "0001-01-01T00:00:00Z" (see https://github.com/cosmos/cosmjs/issues/704#issuecomment-797122415).
+ * This can lead to strings like "0001-01-01T00:00:00Z" (see https://github.com/bitsongofficial/cosmjs-rn/issues/704#issuecomment-797122415).
  * This decoder tries to clean up such encoding from the API and turn them
  * into undefined values.
  */

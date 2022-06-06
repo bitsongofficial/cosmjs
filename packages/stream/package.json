@@ -1,11 +1,12 @@
 {
-  "name": "@cosmjs/stream",
+  "name": "@cosmjs-rn/stream",
   "version": "0.27.1",
   "description": "Utility functions for producing and consuming streams",
   "contributors": [
     "IOV SAS <admin@iov.one>",
     "Confio OÜ <hello@confio.tech>",
-    "Will Clark <willclarktech@users.noreply.github.com>"
+    "Will Clark <willclarktech@users.noreply.github.com>",
+    "Bitsong <hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",
@@ -18,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/stream"
+    "url": "https://github.com/bitsongofficial/cosmjs-rn/tree/main/packages/stream"
   },
   "publishConfig": {
     "access": "public",

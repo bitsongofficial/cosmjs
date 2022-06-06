@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { encodeBech32Pubkey } from "@cosmjs/amino";
-import { fromBase64 } from "@cosmjs/encoding";
-import { coin, coins } from "@cosmjs/proto-signing";
+import { encodeBech32Pubkey } from "@cosmjs-rn/amino";
+import { fromBase64 } from "@cosmjs-rn/encoding";
+import { coin, coins } from "@cosmjs-rn/proto-signing";
 import { MsgMultiSend, MsgSend } from "cosmjs-types/cosmos/bank/v1beta1/tx";
 import {
   MsgFundCommunityPool,

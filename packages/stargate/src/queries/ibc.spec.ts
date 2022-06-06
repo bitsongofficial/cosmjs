@@ -1,4 +1,4 @@
-import { Tendermint34Client } from "@cosmjs/tendermint-rpc";
+import { Tendermint34Client } from "@cosmjs-rn/tendermint-rpc";
 import Long from "long";
 
 import { pendingWithoutSimapp42, simapp } from "../testutils.spec";

@@ -1,11 +1,12 @@
 {
-  "name": "@cosmjs/socket",
+  "name": "@cosmjs-rn/socket",
   "version": "0.27.1",
   "description": "Utility functions for working with WebSockets",
   "contributors": [
     "IOV SAS <admin@iov.one>",
     "Confio OÜ <hello@confio.tech>",
-    "Will Clark <willclarktech@users.noreply.github.com>"
+    "Will Clark <willclarktech@users.noreply.github.com>",
+    "Bitsong <hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",
@@ -18,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/socket"
+    "url": "https://github.com/bitsongofficial/cosmjs-rn/tree/main/packages/socket"
   },
   "publishConfig": {
     "access": "public",
@@ -42,7 +43,7 @@
     "pack-web": "yarn build-or-skip && webpack --mode development --config webpack.web.config.js"
   },
   "dependencies": {
-    "@cosmjs/stream": "workspace:packages/stream",
+    "@cosmjs-rn/stream": "workspace:packages/stream",
     "isomorphic-ws": "^4.0.1",
     "ws": "^7",
     "xstream": "^11.14.0"

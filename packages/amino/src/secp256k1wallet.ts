@@ -1,5 +1,5 @@
-import { Secp256k1, Sha256 } from "@cosmjs/crypto";
-import { Bech32 } from "@cosmjs/encoding";
+import { Secp256k1, Sha256 } from "@cosmjs-rn/crypto";
+import { Bech32 } from "@cosmjs-rn/encoding";
 
 import { rawSecp256k1PubkeyToRawAddress } from "./addresses";
 import { encodeSecp256k1Signature } from "./signature";

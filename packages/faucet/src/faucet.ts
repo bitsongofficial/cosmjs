@@ -2,14 +2,14 @@ import {
   assertIsBroadcastTxSuccess as assertIsBroadcastTxSuccessLaunchpad,
   CosmosClient,
   SigningCosmosClient,
-} from "@cosmjs/launchpad";
+} from "@cosmjs-rn/launchpad";
 import {
   assertIsDeliverTxSuccess as assertIsDeliverTxSuccessStargate,
   calculateFee,
   SigningStargateClient,
   StargateClient,
-} from "@cosmjs/stargate";
-import { sleep } from "@cosmjs/utils";
+} from "@cosmjs-rn/stargate";
+import { sleep } from "@cosmjs-rn/utils";
 
 import * as constants from "./constants";
 import { debugAccount, logAccountsState, logSendJob } from "./debugging";

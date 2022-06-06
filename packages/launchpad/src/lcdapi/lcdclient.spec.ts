@@ -8,8 +8,8 @@ import {
   Secp256k1HdWallet,
   StdFee,
   StdTx,
-} from "@cosmjs/amino";
-import { assert, sleep } from "@cosmjs/utils";
+} from "@cosmjs-rn/amino";
+import { assert, sleep } from "@cosmjs-rn/utils";
 
 import { isBroadcastTxFailure } from "../cosmosclient";
 import { parseLogs } from "../logs";

@@ -1,4 +1,4 @@
-import { Coin } from "@cosmjs/launchpad";
+import { Coin } from "@cosmjs-rn/launchpad";
 
 import { MinimalAccount, SendJob } from "./types";
 

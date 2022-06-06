@@ -112,5 +112,5 @@ export {
   StargateClient,
   TimeoutError,
 } from "./stargateclient";
-export { StdFee } from "@cosmjs/amino";
-export { Coin, coin, coins, makeCosmoshubPath, parseCoins } from "@cosmjs/proto-signing";
+export { StdFee } from "@cosmjs-rn/amino";
+export { Coin, coin, coins, makeCosmoshubPath, parseCoins } from "@cosmjs-rn/proto-signing";

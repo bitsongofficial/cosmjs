@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { toAscii } from "@cosmjs/encoding";
-import { Tendermint34Client } from "@cosmjs/tendermint-rpc";
+import { toAscii } from "@cosmjs-rn/encoding";
+import { Tendermint34Client } from "@cosmjs-rn/tendermint-rpc";
 import { Metadata } from "cosmjs-types/cosmos/bank/v1beta1/bank";
 import { QueryAllBalancesRequest, QueryAllBalancesResponse } from "cosmjs-types/cosmos/bank/v1beta1/query";
 

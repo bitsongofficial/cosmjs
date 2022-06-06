@@ -30,7 +30,7 @@ export class Webserver {
             "\n" +
             "Check the full status via the /status endpoint.\n" +
             "You can get tokens from here by POSTing to /credit.\n" +
-            "See https://github.com/cosmos/cosmjs/tree/main/packages/faucet for all further information.\n";
+            "See https://github.com/bitsongofficial/cosmjs-rn/tree/main/packages/faucet for all further information.\n";
           break;
         case "/status": {
           const [holder, ...distributors] = await faucet.loadAccounts();

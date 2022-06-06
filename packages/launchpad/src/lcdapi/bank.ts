@@ -1,4 +1,4 @@
-import { Coin } from "@cosmjs/amino";
+import { Coin } from "@cosmjs-rn/amino";
 
 import { LcdClient } from "./lcdclient";
 

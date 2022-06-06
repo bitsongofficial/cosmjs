@@ -1,4 +1,4 @@
-import { LcdClient, Secp256k1HdWallet, StdFee } from "@cosmjs/launchpad";
+import { LcdClient, Secp256k1HdWallet, StdFee } from "@cosmjs-rn/launchpad";
 
 const defaultHttpUrl = "http://localhost:1317";
 const defaultNetworkId = "testing";

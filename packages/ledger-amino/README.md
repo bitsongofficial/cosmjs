@@ -1,6 +1,6 @@
-# @cosmjs/ledger-amino
+# @cosmjs-rn/ledger-amino
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/ledger-amino.svg)](https://www.npmjs.com/package/@cosmjs/ledger-amino)
+[![npm version](https://img.shields.io/npm/v/@cosmjs-rn/ledger-amino.svg)](https://www.npmjs.com/package/@cosmjs-rn/ledger-amino)
 
 ## Supported platforms
 
@@ -47,7 +47,7 @@ Then follow the instructions on that page.
 The tests in this package require a Ledger device
 [initialized with the mnemonic](https://support.ledger.com/hc/en-us/articles/360005434914)
 from
-[scripts/launchpad/README.md#preset-accounts](https://github.com/cosmos/cosmjs/blob/main/scripts/launchpad/README.md#preset-accounts)
+[scripts/launchpad/README.md#preset-accounts](https://github.com/bitsongofficial/cosmjs-rn/blob/main/scripts/launchpad/README.md#preset-accounts)
 (see "Ledger: accounts for Ledger based demos and tests") with an installed
 "Cosmos (ATOM)" app. The device must be connected via USB, unlocked and the
 Cosmos app must be opened. The tests require the user to manually approve
@@ -56,7 +56,7 @@ transactions.
 ### Stargate tests
 
 Start a local Stargate blockchain as described in
-[scripts/simapp42/README.md](https://github.com/cosmos/cosmjs/blob/main/scripts/simapp42/README.md)
+[scripts/simapp42/README.md](https://github.com/bitsongofficial/cosmjs-rn/blob/main/scripts/simapp42/README.md)
 and execute:
 
 ```sh
@@ -68,7 +68,7 @@ yarn test
 ### Launchpad tests
 
 Start a local Launchpad blockchain as described in
-[scripts/launchpad/README.md](https://github.com/cosmos/cosmjs/blob/main/scripts/launchpad/README.md)
+[scripts/launchpad/README.md](https://github.com/bitsongofficial/cosmjs-rn/blob/main/scripts/launchpad/README.md)
 and execute:
 
 ```sh
@@ -80,5 +80,5 @@ yarn test
 ## License
 
 This package is part of the cosmjs repository, licensed under the Apache License
-2.0 (see [NOTICE](https://github.com/cosmos/cosmjs/blob/main/NOTICE) and
-[LICENSE](https://github.com/cosmos/cosmjs/blob/main/LICENSE)).
+2.0 (see [NOTICE](https://github.com/bitsongofficial/cosmjs-rn/blob/main/NOTICE) and
+[LICENSE](https://github.com/bitsongofficial/cosmjs-rn/blob/main/LICENSE)).

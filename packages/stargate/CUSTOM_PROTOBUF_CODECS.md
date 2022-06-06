@@ -14,14 +14,14 @@ CosmJS.
 
 - You are working on a TypeScript project. (Plain JS is possible but not covered
   by this document. It should work if you just strip out the type information.)
-- You have installed `@cosmjs/proto-signing`, `@cosmjs/stargate` and
-  `@cosmjs/tendermint-rpc` as dependencies. In general these dependencies should
+- You have installed `@cosmjs-rn/proto-signing`, `@cosmjs-rn/stargate` and
+  `@cosmjs-rn/tendermint-rpc` as dependencies. In general these dependencies should
   all have the same version, and this document is accurate as of version 0.26.
   ```
   "dependencies": {
-    "@cosmjs/proto-signing": "^0.26.4",
-    "@cosmjs/stargate": "^0.26.4",
-    "@cosmjs/tendermint-rpc": "^0.26.4",
+    "@cosmjs-rn/proto-signing": "^0.26.4",
+    "@cosmjs-rn/stargate": "^0.26.4",
+    "@cosmjs-rn/tendermint-rpc": "^0.26.4",
     // ...
   }
   ```
@@ -39,7 +39,7 @@ You will need these files locally. There are two ways this is typically done:
 
 1. **Download copies** from an external source into the project. For example, we
    used
-   [this script](https://github.com/cosmos/cosmjs/blob/v0.25.6/packages/stargate/scripts/get-proto.sh)
+   [this script](https://github.com/bitsongofficial/cosmjs-rn/blob/v0.25.6/packages/stargate/scripts/get-proto.sh)
    to download the definition files from the Cosmos SDK repository.
 2. **Git submodules** allow linking external repositories into the current
    project's git. This is done in
@@ -66,8 +66,8 @@ protoc \
 
 Note that the available `ts-proto` options are described
 [here](https://github.com/stephenh/ts-proto#supported-options). You can see the
-script we used for the `@cosmjs/stargate` package
-[here](https://github.com/cosmos/cosmjs/blob/v0.25.6/packages/stargate/scripts/define-proto.sh).
+script we used for the `@cosmjs-rn/stargate` package
+[here](https://github.com/bitsongofficial/cosmjs-rn/blob/v0.25.6/packages/stargate/scripts/define-proto.sh).
 
 ### Working with Yarn 2+
 
@@ -103,15 +103,15 @@ This section assumes that your definition files included `MsgXxx` `message`
 definitions for use in submitting transactions to a Cosmos SDK blockchain. You
 can instantiate a signing client for Stargate which supports those message types
 using a custom registry. We expose a `Registry` class from
-`@cosmjs/proto-signing` for you to use, which maps type URLs to codec objects.
+`@cosmjs-rn/proto-signing` for you to use, which maps type URLs to codec objects.
 For example:
 
 ```ts
-import { DirectSecp256k1HdWallet, Registry } from "@cosmjs/proto-signing";
+import { DirectSecp256k1HdWallet, Registry } from "@cosmjs-rn/proto-signing";
 import {
   defaultRegistryTypes as defaultStargateTypes,
   SigningStargateClient,
-} from "@cosmjs/stargate";
+} from "@cosmjs-rn/stargate";
 import { MsgXxx } from "./path/to/generated/codec/my/custom/tx"; // Replace with your own Msg import
 
 const myRegistry = new Registry(defaultStargateTypes);
@@ -171,8 +171,8 @@ currently requires a few layers of abstraction. Here is how you can achieve it
 using CosmJS helpers:
 
 ```ts
-import { createProtobufRpcClient, QueryClient } from "@cosmjs/stargate";
-import { Tendermint34Client } from "@cosmjs/tendermint-rpc";
+import { createProtobufRpcClient, QueryClient } from "@cosmjs-rn/stargate";
+import { Tendermint34Client } from "@cosmjs-rn/tendermint-rpc";
 import { QueryClientImpl } from "./path/to/generated/codec/my/custom/query";
 
 // Inside an async function...
@@ -194,7 +194,7 @@ const queryResult = await queryService.MyCustomQuery({
 });
 ```
 
-Additionally, we provide a system for extending `@cosmjs/stargate`’s
+Additionally, we provide a system for extending `@cosmjs-rn/stargate`’s
 `QueryClient` with methods of your own design, wrapping those of the query
 service. For this you will need to define your own `setupXxxExtension` functions
 and pass them to the `QueryClient.withExtensions` static method like this:
@@ -230,4 +230,4 @@ const queryResult = await queryClient.mymodule.customQuery("bar");
 ```
 
 You can see how CosmJS sets up the `bank` extension for its default query client
-[here](https://github.com/cosmos/cosmjs/blob/v0.26.4/packages/stargate/src/queries/bank.ts).
+[here](https://github.com/bitsongofficial/cosmjs-rn/blob/v0.26.4/packages/stargate/src/queries/bank.ts).

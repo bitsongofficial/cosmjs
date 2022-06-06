@@ -6,8 +6,8 @@ import {
   OfflineAminoSigner,
   serializeSignDoc,
   StdSignDoc,
-} from "@cosmjs/amino";
-import { HdPath } from "@cosmjs/crypto";
+} from "@cosmjs-rn/amino";
+import { HdPath } from "@cosmjs-rn/crypto";
 import Transport from "@ledgerhq/hw-transport";
 
 import { AddressAndPubkey, LaunchpadLedger, LaunchpadLedgerOptions } from "./launchpadledger";

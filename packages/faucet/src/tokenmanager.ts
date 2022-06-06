@@ -1,5 +1,5 @@
-import { Coin } from "@cosmjs/launchpad";
-import { Decimal, Uint53 } from "@cosmjs/math";
+import { Coin } from "@cosmjs-rn/launchpad";
+import { Decimal, Uint53 } from "@cosmjs-rn/math";
 
 import { MinimalAccount } from "./types";
 

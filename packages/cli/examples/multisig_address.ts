@@ -1,6 +1,6 @@
-import { MultisigThresholdPubkey, pubkeyToAddress } from "@cosmjs/amino";
+import { MultisigThresholdPubkey, pubkeyToAddress } from "@cosmjs-rn/amino";
 
-// https://github.com/cosmos/cosmjs/issues/673#issuecomment-779847238
+// https://github.com/bitsongofficial/cosmjs-rn/issues/673#issuecomment-779847238
 const multisigPubkey: MultisigThresholdPubkey = {
   type: "tendermint/PubKeyMultisigThreshold",
   value: {

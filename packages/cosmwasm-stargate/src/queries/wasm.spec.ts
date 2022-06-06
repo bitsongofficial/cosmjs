@@ -1,6 +1,6 @@
-import { sha256 } from "@cosmjs/crypto";
-import { fromAscii, fromHex, toAscii, toHex } from "@cosmjs/encoding";
-import { DirectSecp256k1HdWallet, OfflineDirectSigner, Registry } from "@cosmjs/proto-signing";
+import { sha256 } from "@cosmjs-rn/crypto";
+import { fromAscii, fromHex, toAscii, toHex } from "@cosmjs-rn/encoding";
+import { DirectSecp256k1HdWallet, OfflineDirectSigner, Registry } from "@cosmjs-rn/proto-signing";
 import {
   assertIsDeliverTxSuccess,
   Coin,
@@ -10,8 +10,8 @@ import {
   logs,
   SigningStargateClient,
   StdFee,
-} from "@cosmjs/stargate";
-import { assert } from "@cosmjs/utils";
+} from "@cosmjs-rn/stargate";
+import { assert } from "@cosmjs-rn/utils";
 import { MsgExecuteContract, MsgInstantiateContract, MsgStoreCode } from "cosmjs-types/cosmwasm/wasm/v1/tx";
 import { ContractCodeHistoryOperationType } from "cosmjs-types/cosmwasm/wasm/v1/types";
 import Long from "long";

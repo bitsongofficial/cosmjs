@@ -1,9 +1,10 @@
 {
-  "name": "@cosmjs/stargate",
+  "name": "@cosmjs-rn/stargate",
   "version": "0.27.1",
   "description": "Utilities for Cosmos SDK 0.40",
   "contributors": [
-    "Simon Warta <webmaster128@users.noreply.github.com>"
+    "Simon Warta <webmaster128@users.noreply.github.com>",
+    "Bitsong <hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",
@@ -16,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/stargate"
+    "url": "https://github.com/bitsongofficial/cosmjs-rn/tree/main/packages/stargate"
   },
   "publishConfig": {
     "access": "public",
@@ -39,20 +40,20 @@
   },
   "dependencies": {
     "@confio/ics23": "0.6.3",
-    "@cosmjs/amino": "workspace:packages/amino",
-    "@cosmjs/encoding": "workspace:packages/encoding",
-    "@cosmjs/math": "workspace:packages/math",
-    "@cosmjs/proto-signing": "workspace:packages/proto-signing",
-    "@cosmjs/stream": "workspace:packages/stream",
-    "@cosmjs/tendermint-rpc": "workspace:packages/tendermint-rpc",
-    "@cosmjs/utils": "workspace:packages/utils",
+    "@cosmjs-rn/amino": "workspace:packages/amino",
+    "@cosmjs-rn/encoding": "workspace:packages/encoding",
+    "@cosmjs-rn/math": "workspace:packages/math",
+    "@cosmjs-rn/proto-signing": "workspace:packages/proto-signing",
+    "@cosmjs-rn/stream": "workspace:packages/stream",
+    "@cosmjs-rn/tendermint-rpc": "workspace:packages/tendermint-rpc",
+    "@cosmjs-rn/utils": "workspace:packages/utils",
     "cosmjs-types": "^0.4.0",
     "long": "^4.0.0",
     "protobufjs": "~6.10.2",
     "xstream": "^11.14.0"
   },
   "devDependencies": {
-    "@cosmjs/crypto": "workspace:packages/crypto",
+    "@cosmjs-rn/crypto": "workspace:packages/crypto",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/eslint-plugin-prettier": "^3",
     "@types/jasmine": "^3.8",

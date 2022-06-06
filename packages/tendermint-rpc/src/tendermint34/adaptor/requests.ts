@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { toBase64, toHex } from "@cosmjs/encoding";
-import { JsonRpcRequest } from "@cosmjs/json-rpc";
+import { toBase64, toHex } from "@cosmjs-rn/encoding";
+import { JsonRpcRequest } from "@cosmjs-rn/json-rpc";
 
 import { createJsonRpcRequest } from "../../jsonrpc";
 import { assertNotEmpty, Integer, may } from "../encodings";

@@ -227,7 +227,7 @@ export interface Block {
    */
   readonly lastCommit: Commit | null;
   readonly txs: readonly Uint8Array[];
-  // This field becomes non-optional in 0.28 (https://github.com/cosmos/cosmjs/issues/1011)
+  // This field becomes non-optional in 0.28 (https://github.com/bitsongofficial/cosmjs-rn/issues/1011)
   readonly evidence?: readonly Evidence[];
 }
 
@@ -235,7 +235,7 @@ export interface Block {
  * We lost track on how the evidence structure actually looks like.
  * This is any now and passed to the caller untouched.
  *
- * See also https://github.com/cosmos/cosmjs/issues/980.
+ * See also https://github.com/bitsongofficial/cosmjs-rn/issues/980.
  */
 export type Evidence = any;
 

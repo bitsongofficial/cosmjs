@@ -1,8 +1,8 @@
 {
-  "name": "cosmjs-monorepo-root",
+  "name": "cosmjs-rn-monorepo-root",
   "description": "Transaction codec and client to communicate with any wasmd blockchain",
   "private": true,
-  "author": "Ethan Frey <ethanfrey@users.noreply.github.com>",
+  "author": "Bitsong <hello@bitsong.io>",
   "license": "Apache-2.0",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs"
+    "url": "https://github.com/bitsongofficial/cosmjs-rn"
   },
   "publishConfig": {
     "access": "public",
@@ -43,13 +43,13 @@
     "pack": "yarn workspaces foreach --no-private exec yarn pack"
   },
   "devDependencies": {
-    "@cosmjs/amino": "workspace:packages/amino",
-    "@cosmjs/cosmwasm-stargate": "workspace:packages/cosmwasm-stargate",
-    "@cosmjs/crypto": "workspace:packages/crypto",
-    "@cosmjs/encoding": "workspace:packages/encoding",
-    "@cosmjs/launchpad": "workspace:packages/launchpad",
-    "@cosmjs/proto-signing": "workspace:packages/proto-signing",
-    "@cosmjs/stargate": "workspace:packages/stargate",
+    "@cosmjs-rn/amino": "workspace:packages/amino",
+    "@cosmjs-rn/cosmwasm-stargate": "workspace:packages/cosmwasm-stargate",
+    "@cosmjs-rn/crypto": "workspace:packages/crypto",
+    "@cosmjs-rn/encoding": "workspace:packages/encoding",
+    "@cosmjs-rn/launchpad": "workspace:packages/launchpad",
+    "@cosmjs-rn/proto-signing": "workspace:packages/proto-signing",
+    "@cosmjs-rn/stargate": "workspace:packages/stargate",
     "eslint": "^7.5",
     "prettier": "^2.4.1",
     "typescript": "~4.4"

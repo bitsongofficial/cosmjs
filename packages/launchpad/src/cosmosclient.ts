@@ -1,7 +1,7 @@
-import { Coin, Pubkey, StdTx } from "@cosmjs/amino";
-import { sha256 } from "@cosmjs/crypto";
-import { fromBase64, fromHex, toHex } from "@cosmjs/encoding";
-import { Uint53 } from "@cosmjs/math";
+import { Coin, Pubkey, StdTx } from "@cosmjs-rn/amino";
+import { sha256 } from "@cosmjs-rn/crypto";
+import { fromBase64, fromHex, toHex } from "@cosmjs-rn/encoding";
+import { Uint53 } from "@cosmjs-rn/math";
 
 import {
   AuthExtension,

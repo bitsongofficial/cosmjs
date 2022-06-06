@@ -3,7 +3,7 @@ import {
   JsonRpcRequest,
   JsonRpcSuccessResponse,
   parseJsonRpcResponse,
-} from "@cosmjs/json-rpc";
+} from "@cosmjs-rn/json-rpc";
 import axios from "axios";
 
 import { hasProtocol, RpcClient } from "./rpcclient";

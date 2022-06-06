@@ -1,9 +1,10 @@
 {
-  "name": "@cosmjs/ledger-amino",
+  "name": "@cosmjs-rn/ledger-amino",
   "version": "0.27.1",
   "description": "A library for signing Amino-encoded transactions using Ledger devices",
   "contributors": [
-    "Will Clark <willclarktech@users.noreply.github.com>"
+    "Will Clark <willclarktech@users.noreply.github.com>",
+    "Bitsong <hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",
@@ -37,17 +38,17 @@
     "pack-web": "yarn build-or-skip && webpack --mode development --config webpack.demo.config.js"
   },
   "dependencies": {
-    "@cosmjs/amino": "workspace:packages/amino",
-    "@cosmjs/crypto": "workspace:packages/crypto",
-    "@cosmjs/encoding": "workspace:packages/encoding",
-    "@cosmjs/math": "workspace:packages/math",
-    "@cosmjs/utils": "workspace:packages/utils",
+    "@cosmjs-rn/amino": "workspace:packages/amino",
+    "@cosmjs-rn/crypto": "workspace:packages/crypto",
+    "@cosmjs-rn/encoding": "workspace:packages/encoding",
+    "@cosmjs-rn/math": "workspace:packages/math",
+    "@cosmjs-rn/utils": "workspace:packages/utils",
     "ledger-cosmos-js": "^2.1.8",
     "semver": "^7.3.2"
   },
   "devDependencies": {
-    "@cosmjs/launchpad": "workspace:packages/launchpad",
-    "@cosmjs/stargate": "workspace:packages/stargate",
+    "@cosmjs-rn/launchpad": "workspace:packages/launchpad",
+    "@cosmjs-rn/stargate": "workspace:packages/stargate",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@ledgerhq/hw-transport": "^5.25.0",
     "@ledgerhq/hw-transport-node-hid": "^5.25.0",

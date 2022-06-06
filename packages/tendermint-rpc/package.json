@@ -1,11 +1,12 @@
 {
-  "name": "@cosmjs/tendermint-rpc",
+  "name": "@cosmjs-rn/tendermint-rpc",
   "version": "0.27.1",
   "description": "Tendermint RPC clients",
   "contributors": [
     "IOV SAS <admin@iov.one>",
     "Confio OÜ <hello@confio.tech>",
-    "Will Clark <willclarktech@users.noreply.github.com>"
+    "Will Clark <willclarktech@users.noreply.github.com>",
+    "Bitsong <hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",
@@ -18,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/cosmos/cosmjs/tree/main/packages/tendermint-rpc"
+    "url": "https://github.com/bitsongofficial/cosmjs-rn/tree/main/packages/tendermint-rpc"
   },
   "publishConfig": {
     "access": "public",
@@ -42,18 +43,18 @@
     "pack-web": "yarn build-or-skip && webpack --mode development --config webpack.web.config.js"
   },
   "dependencies": {
-    "@cosmjs/crypto": "workspace:packages/crypto",
-    "@cosmjs/encoding": "workspace:packages/encoding",
-    "@cosmjs/json-rpc": "workspace:packages/json-rpc",
-    "@cosmjs/math": "workspace:packages/math",
-    "@cosmjs/socket": "workspace:packages/socket",
-    "@cosmjs/stream": "workspace:packages/stream",
+    "@cosmjs-rn/crypto": "workspace:packages/crypto",
+    "@cosmjs-rn/encoding": "workspace:packages/encoding",
+    "@cosmjs-rn/json-rpc": "workspace:packages/json-rpc",
+    "@cosmjs-rn/math": "workspace:packages/math",
+    "@cosmjs-rn/socket": "workspace:packages/socket",
+    "@cosmjs-rn/stream": "workspace:packages/stream",
     "axios": "^0.21.2",
     "readonly-date": "^1.0.0",
     "xstream": "^11.14.0"
   },
   "devDependencies": {
-    "@cosmjs/utils": "workspace:packages/utils",
+    "@cosmjs-rn/utils": "workspace:packages/utils",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
     "@types/eslint-plugin-prettier": "^3",
     "@types/jasmine": "^3.8",

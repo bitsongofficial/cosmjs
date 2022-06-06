@@ -1,10 +1,10 @@
 #!/usr/bin/env -S yarn node
 
 /* eslint-disable @typescript-eslint/naming-convention */
-const { coins, Secp256k1HdWallet } = require("@cosmjs/amino");
-const { Random } = require("@cosmjs/crypto");
-const { Bech32 } = require("@cosmjs/encoding");
-const { SigningCosmosClient, assertIsBroadcastTxSuccess } = require("@cosmjs/launchpad");
+const { coins, Secp256k1HdWallet } = require("@cosmjs-rn/amino");
+const { Random } = require("@cosmjs-rn/crypto");
+const { Bech32 } = require("@cosmjs-rn/encoding");
+const { SigningCosmosClient, assertIsBroadcastTxSuccess } = require("@cosmjs-rn/launchpad");
 
 const httpUrl = "http://localhost:1317";
 const faucet = {

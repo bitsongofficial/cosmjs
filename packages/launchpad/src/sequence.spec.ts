@@ -1,4 +1,4 @@
-import { assert } from "@cosmjs/utils";
+import { assert } from "@cosmjs-rn/utils";
 
 import { findSequenceForSignedTx } from "./sequence";
 import response1 from "./testdata/txresponse1.json";

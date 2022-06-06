@@ -1,5 +1,5 @@
-import { toAscii } from "@cosmjs/encoding";
-import { sleep } from "@cosmjs/utils";
+import { toAscii } from "@cosmjs-rn/encoding";
+import { sleep } from "@cosmjs-rn/utils";
 
 export const chainIdMatcher = /^[-a-zA-Z0-9]{3,30}$/;
 export const anyMatcher = /^.*$/; // Any string, including empty. Does not do more than a type check.

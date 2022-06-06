@@ -1,6 +1,6 @@
-# @cosmjs/launchpad
+# @cosmjs-rn/launchpad
 
-[![npm version](https://img.shields.io/npm/v/@cosmjs/launchpad.svg)](https://www.npmjs.com/package/@cosmjs/launchpad)
+[![npm version](https://img.shields.io/npm/v/@cosmjs-rn/launchpad.svg)](https://www.npmjs.com/package/@cosmjs-rn/launchpad)
 
 A client library for the Cosmos SDK 0.37 (cosmoshub-3), 0.38 and 0.39
 (Launchpad). See the article
@@ -9,7 +9,7 @@ to learn more about launchpad.
 
 ## Basic usage
 
-The basic usage of the package `@cosmjs/launchpad` contains the following:
+The basic usage of the package `@cosmjs-rn/launchpad` contains the following:
 
 1. [Create a wallet](#create-a-wallet)
 2. [Sign and broadcast transactions](#sign-and-broadcast-transactions)
@@ -24,7 +24,7 @@ requires serious security review.
 If you do not yet have a mnemonic, generate a new wallet with a random mnemonic:
 
 ```ts
-import { Secp256k1HdWallet } from "@cosmjs/launchpad";
+import { Secp256k1HdWallet } from "@cosmjs-rn/launchpad";
 
 // …
 
@@ -38,7 +38,7 @@ console.log("Address:", address);
 Or import an existing one:
 
 ```ts
-import { Secp256k1HdWallet } from "@cosmjs/launchpad";
+import { Secp256k1HdWallet } from "@cosmjs-rn/launchpad";
 
 // …
 
@@ -61,7 +61,7 @@ import {
   Secp256k1HdWallet,
   SigningCosmosClient,
   coins,
-} from "@cosmjs/launchpad";
+} from "@cosmjs-rn/launchpad";
 
 // …
 
@@ -92,7 +92,7 @@ import {
   coins,
   coin,
   MsgDelegate,
-} from "@cosmjs/launchpad";
+} from "@cosmjs-rn/launchpad";
 
 // …
 
@@ -140,7 +140,7 @@ import {
   coins,
   coin,
   MsgDelegate,
-} from "@cosmjs/launchpad";
+} from "@cosmjs-rn/launchpad";
 
 // …
 
@@ -186,7 +186,7 @@ import {
   coins,
   coin,
   MsgDelegate,
-} from "@cosmjs/launchpad";
+} from "@cosmjs-rn/launchpad";
 
 const wallet0 = await Secp256k1HdWallet.fromMnemonic(mnemonic0);
 const [{ address: address0 }] = await wallet.getAccounts();
@@ -236,13 +236,13 @@ as custom modules. The modularity has two sides that are handled separately:
 
 ### Query support
 
-@cosmjs/launchpad now has a flexible
+@cosmjs-rn/launchpad now has a flexible
 [LcdClient](https://cosmwasm.github.io/cosmjs/latest/launchpad/classes/lcdclient.html),
 which can be extended with all the standard Cosmos SDK modules in a type-safe
 way. With
 
 ```ts
-import { LcdClient } from "@cosmjs/launchpad";
+import { LcdClient } from "@cosmjs-rn/launchpad";
 
 const client = new LcdClient(apiUrl);
 const response = await client.nodeInfo();
@@ -252,7 +252,7 @@ you only get access to blocks, transaction lists and node info. In order to sign
 transactions, you need to setup the auth extension with:
 
 ```ts
-import { LcdClient, setupAuthExtension } from "@cosmjs/launchpad";
+import { LcdClient, setupAuthExtension } from "@cosmjs-rn/launchpad";
 
 const client = LcdClient.withExtensions({ apiUrl }, setupAuthExtension);
 const { account_number, sequence } = (await client.auth.account(myAddress))
@@ -272,7 +272,7 @@ import {
   setupSlashingExtension,
   setupStakingExtension,
   setupSupplyExtension,
-} from "@cosmjs/launchpad";
+} from "@cosmjs-rn/launchpad";
 
 const client = LcdClient.withExtensions(
   { apiUrl },
@@ -346,7 +346,7 @@ import {
   OfflineSigner,
   SigningCosmosClient,
   StdFee,
-} from "@cosmjs/launchpad";
+} from "@cosmjs-rn/launchpad";
 
 async function publishProposal(
   apiUrl: string,
@@ -390,7 +390,7 @@ example we show how to build a client for a blockchain with a wasm module:
 import {
   MsgExecuteContract,
   setupWasmExtension,
-} from "@cosmjs/cosmwasm-launchpad";
+} from "@cosmjs-rn/cosmwasm-launchpad";
 import {
   assertIsBroadcastTxResult,
   LcdClient,
@@ -398,7 +398,7 @@ import {
   setupAuthExtension,
   StdFee,
   StdTx,
-} from "@cosmjs/launchpad";
+} from "@cosmjs-rn/launchpad";
 
 const client = LcdClient.withExtensions(
   { apiUrl },
@@ -464,7 +464,7 @@ const wallet = await Secp256k1HdWallet.generate(18);
 This operation can now run a couple of seconds without freezing the UI.
 
 ```ts
-import { executeKdf } from "@cosmjs/launchpad";
+import { executeKdf } from "@cosmjs-rn/launchpad";
 
 // pass password to the worker
 
@@ -493,7 +493,7 @@ const serialized = await wallet.serializeWithEncryptionKey(
 **Session 2 (WebWorker)**
 
 ```ts
-import { executeKdf, extractKdfConfiguration } from "@cosmjs/launchpad";
+import { executeKdf, extractKdfConfiguration } from "@cosmjs-rn/launchpad";
 
 // pass serialized and password to the worker
 
@@ -517,5 +517,5 @@ const restored = await Secp256k1HdWallet.deserializeWithEncryptionKey(
 ## License
 
 This package is part of the cosmjs repository, licensed under the Apache License
-2.0 (see [NOTICE](https://github.com/cosmos/cosmjs/blob/main/NOTICE) and
-[LICENSE](https://github.com/cosmos/cosmjs/blob/main/LICENSE)).
+2.0 (see [NOTICE](https://github.com/bitsongofficial/cosmjs-rn/blob/main/NOTICE) and
+[LICENSE](https://github.com/bitsongofficial/cosmjs-rn/blob/main/LICENSE)).

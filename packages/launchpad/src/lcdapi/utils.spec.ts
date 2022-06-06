@@ -1,4 +1,4 @@
-import { Pubkey } from "@cosmjs/amino";
+import { Pubkey } from "@cosmjs-rn/amino";
 
 import { normalizePubkey, uint64ToNumber, uint64ToString } from "./utils";
 

@@ -1,4 +1,4 @@
-import { EncodeObject } from "@cosmjs/proto-signing";
+import { EncodeObject } from "@cosmjs-rn/proto-signing";
 import {
   MsgClearAdmin,
   MsgExecuteContract,
