@@ -6,6 +6,7 @@
   "license": "Apache-2.0",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "version": "0.27.1",
   "files": [
     "build/",
     "*.md",
@@ -29,6 +30,7 @@
     "format-shell": "shfmt -w scripts packages",
     "lint": "yarn workspaces foreach --topological-dev --parallel --verbose run lint",
     "lint-fix": "yarn workspaces foreach --topological-dev --parallel --verbose run lint-fix",
+    "link": "yarn workspaces foreach --topological-dev --parallel --verbose run link",
     "test": "yarn workspaces foreach --topological-dev --parallel --verbose run test",
     "test-firefox": "yarn workspaces foreach --topological-dev --parallel --verbose run test-firefox",
     "test-chrome": "yarn workspaces foreach --topological-dev --parallel --verbose run test-chrome",
@@ -37,7 +39,8 @@
     "docs": "yarn workspaces foreach --topological-dev --parallel --verbose run docs",
     "pack-web": "yarn workspaces foreach --topological-dev --parallel --verbose run pack-web",
     "publish-next": "yarn workspaces foreach --no-private exec yarn npm publish --tag next",
-    "publish-latest": "yarn workspaces foreach --no-private exec yarn npm publish"
+    "publish-latest": "yarn workspaces foreach --no-private exec yarn npm publish",
+    "pack": "yarn workspaces foreach --no-private exec yarn pack"
   },
   "devDependencies": {
     "@cosmjs/amino": "workspace:packages/amino",
