@@ -4,7 +4,7 @@
   "description": "A library for signing Amino-encoded transactions using Ledger devices",
   "contributors": [
     "Will Clark <willclarktech@users.noreply.github.com>",
-    "Bitsong <hello@bitsong.io>"
+    "BitSong<hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",

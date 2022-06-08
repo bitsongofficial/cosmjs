@@ -5,7 +5,7 @@
   "contributors": [
     "Will Clark <willclarktech@users.noreply.github.com>",
     "Simon Warta <webmaster128@users.noreply.github.com>",
-    "Bitsong <hello@bitsong.io>"
+    "BitSong<hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",

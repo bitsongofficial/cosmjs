@@ -5,7 +5,7 @@
   "contributors": [
     "IOV SAS <admin@iov.one>",
     "Simon Warta",
-    "Bitsong <hello@bitsong.io>"
+    "BitSong<hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",

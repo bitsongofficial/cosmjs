@@ -4,7 +4,7 @@
   "description": "Utilities for Cosmos SDK 0.40",
   "contributors": [
     "Simon Warta <webmaster128@users.noreply.github.com>",
-    "Bitsong <hello@bitsong.io>"
+    "BitSong<hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",

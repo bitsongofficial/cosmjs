@@ -7,6 +7,11 @@
   </a>
 </div>
 
+## Disclaimer
+This is a fork of ["CosmJS"](https://github.com/cosmos/cosmjs) reverted to version 0.27.1 with different dependencies versions meant to work with React Native projects. Even though CosmJS (up to version 0.28.4) should be compatible with ES2018 it broke compatibility on some environments by using BigInt in new versions. The following Readme and the code in this repository are the same as the main one. You can see the changes in metadata and dependencies in the dev branch of this repository.
+
+## Introduction
+
 CosmJS is the Swiss Army knife to power JavaScript based client solutions
 ranging from Web apps/explorers over browser extensions to server-side clients
 like faucets/scrapers in the Cosmos ecosystem.

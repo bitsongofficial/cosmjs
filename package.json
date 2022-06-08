@@ -2,7 +2,7 @@
   "name": "cosmjs-rn-monorepo-root",
   "description": "Transaction codec and client to communicate with any wasmd blockchain",
   "private": true,
-  "author": "Bitsong <hello@bitsong.io>",
+  "author": "BitSong<hello@bitsong.io>",
   "license": "Apache-2.0",
   "main": "build/index.js",
   "types": "build/index.d.ts",

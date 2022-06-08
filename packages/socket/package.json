@@ -6,7 +6,7 @@
     "IOV SAS <admin@iov.one>",
     "Confio OÜ <hello@confio.tech>",
     "Will Clark <willclarktech@users.noreply.github.com>",
-    "Bitsong <hello@bitsong.io>"
+    "BitSong<hello@bitsong.io>"
   ],
   "license": "Apache-2.0",
   "main": "build/index.js",
